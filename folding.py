@@ -13,7 +13,8 @@ board = PicoRobotics.KitronikPicoRobotics()
 INFO = 0
 ERROR = 1
 
-def log(level: int, message: str, *args: Any):
+
+def log(level: int, message: str, *args):
     if level == INFO:
         message = "[INFO] " + message
     elif level == ERROR:
@@ -30,7 +31,7 @@ def degrees(angle: int):
     return (angle / 270) * 180
 
 
-def fold(panel: str, angle: int=ANGLE):
+def fold(panel: str, angle: int = ANGLE):
     """
     Folds the given panel. Fold angle default to ANGLE.
     """
@@ -62,9 +63,8 @@ def reset_servo_angles():
 
 
 def main():
-  fold("right")
-        
+    pass
+
+
 if __name__ == "__main__":
     main()
-
- 
