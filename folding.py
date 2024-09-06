@@ -2,8 +2,8 @@ import time
 import PicoRobotics
 
 # The default angle to fold the panels.
-ANGLE = 160
-STARTING_ANGLE = 10
+ANGLE = 130
+STARTING_ANGLE = 15
 
 # The list of panel names, numbered by their index i.e. bottom = 1, left = 2 etc.
 PANELS = ["bottom", "left", "right", "middle", "top"]
@@ -63,8 +63,7 @@ def reset_servo_angles():
 
 
 def main():
-    pass
-
+    fold("bottom")
 
 if __name__ == "__main__":
     main()
